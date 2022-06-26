@@ -1,0 +1,122 @@
+.content {
+    position: relative;
+    top: 2vw;
+  
+    display: grid;
+    grid-template-areas: 
+    'properties sale_roof submit_application'
+    'properties and_installation submit_application'
+    'properties buttons submit_application'
+    'properties answer submit_application';
+    grid-template-columns: 15vw 45vw 25vw;
+    grid-template-rows: 14.5vw 4vw 6.5vw;
+    gap: 1vw;
+  }
+
+  .properties {
+    grid-area: properties;
+  
+    width: 9vw;
+    padding: 3.5vw 2vw 0 2vw;
+    line-height: 1.2vw;
+  
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+  
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    background-color: white;
+    border-radius: 2vw;
+  }
+  
+  .sale_roof {
+    width: 38vw;
+    position: relative;
+    top: 1vw;
+  
+    grid-area: sale_roof;
+    font-size: 3vw;
+  }
+  
+  .and_installation {
+    width: 25vw;
+    height: 7vh;
+    
+    grid-area: and_installation;
+    font-size: 2.2vw;
+  }
+  
+  .circles {
+    width: 3.5vw;
+  }
+  
+  .buttons {
+    grid-area: buttons;
+  
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: white;
+  
+    display: flex;
+    gap: 1vw;
+  }
+  
+  .green_button {
+    width: 22vw;
+    height: 6vw;
+  
+    background-image: url(../../assets/green_button.svg);
+    background-size: 100% 100%;
+  }
+  
+  .green_button:hover {
+    background-image: url(../../assets/green_button_hover.svg);
+  
+  }
+  
+  .green_button_text {
+    width: 70%;
+    position: relative;
+    top: 35%;
+    transform: translate(10%, -50%);
+  }
+  
+  .orange_button {
+    width: 20vw;
+    height: 6vw;
+  
+    background-image: url(../../assets/orange_button.svg);
+    background-size: 100% 100%;
+  }
+  
+  .orange_button_text {
+    width: 60%;
+    position: relative;
+    position: relative;
+    top: 35%;
+    transform: translate(20%, -50%);
+  }
+  
+  .orange_button:hover {
+    background-image: url(../../assets/orange_button_hover.svg);
+  }
+  
+  .answer_questions {
+    grid-area: answer;
+    width: 20vw;;
+    display: flex;
+  }
+  
+  .cursor {
+    width: 2vw;
+    height: 2vh;
+  
+    position: relative;
+    top: 0;
+  }
+  
+  .answer {
+    width: 14vw;
+    height: 10vh;
+    line-height: 1.3vw;
+  }
+  

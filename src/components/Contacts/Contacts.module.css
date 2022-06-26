@@ -1,0 +1,114 @@
+.contacts {
+    height: 15.5vh;
+    position: relative;
+    top: 1vw;
+    display: grid;
+    grid-template-columns: 19vw 13vw 22vw 16vw 17vw;
+  }
+  
+  .roof {
+    width: 13vw;
+    height: 10vh;
+  
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+  
+    /* font-size: 0.9vw; */
+  }
+  
+  .download_catalog {
+    height: 5.5vh;
+  
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+  
+    display: flex;
+    gap: 1vw;
+  }
+  
+  .catalog {
+    width: 10vw;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
+  .round_background {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50vw;
+  }
+  
+  .color_green {
+    position: relative;
+    top: 1vw;
+    text-align: center;
+    color: #12C868;
+  }
+  
+  .border_bottom {
+    height: 1.5vw;
+    border-bottom: 0.1vw dotted #12C868;
+  }
+  
+  .logo {
+    /* width: 20vw;
+    height: 15vh; */
+    background-image: url(../../assets/logo_background.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* clip-path: polygon(5% 75%, 0 70%, 0 0, 100% 0, 100% 70%, 95% 75%, 65% 75%, 55% 65%, 45% 65%, 35% 75%); */
+  }
+  
+  .logo img {
+    padding-top: 1vw;
+    width: 10vw;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  li::before {
+    content: "\2022";
+    color: #12C868;
+  }
+  
+  .answer_online {
+    width: 15vw;
+    height: 7vh;
+  
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+  
+  .messengers {
+    width: 2.5vw;
+    height: 2.5svw;
+    padding: 0.2vw;
+  }
+  
+  .schedule {
+    height: 7vh;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+  }
+  
+  .telephone_number {
+    font-size: 1.8vw;
+    font-weight: bold;
+  }
+  
+  .call_me {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 6vw;
+  }
+  

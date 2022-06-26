@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    top: 0.5vw;
+  
+    width: 82vw;
+    padding: 1.5vw 1vw 1vw 1vw;
+  
+    display: flex;
+    gap: 5.5vw;
+    text-transform: uppercase;
+  
+    border-bottom: rgba(28, 28, 28, 7%) 0.1vw solid;
+  }
+  
+  .house {
+    width: 1.2vw;
+    height: 1.5vw;
+  }

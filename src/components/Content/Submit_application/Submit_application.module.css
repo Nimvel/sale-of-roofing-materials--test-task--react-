@@ -1,0 +1,88 @@
+.submit_application_background {
+  width: 27vw;
+  height: 32vw;
+
+  position: absolute;
+  right: 0;
+  /* padding: 2vw; */
+
+  grid-area: submit_application;
+
+  background-color: #F5F5F5;
+  border: rgba(28, 28, 28, 7%) 0.1vw solid;
+  border-radius: 2vw;
+}
+
+.submit_application {
+  width: 16vw;
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 5vw 4vw 2vw 2vw 5vw 5vw 8vw;
+}
+
+.submit_application input {
+  width: 16vw;
+  height: 4vw;
+  border-radius: 3vw;
+  border: none;
+}
+
+.call_me_button {
+  width: 16vw;
+  height: 4vw;
+  background-image: url(../../../assets/call_me_button.svg);
+  background-size: 100% 100%;
+}
+
+.call_me_button_text {
+  position: relative;
+  top: 35%;
+  right: 10%;
+  transform: translate(0, -50%);
+  color: white;
+  font-size: 1vw;
+}
+.font_size_1vw {
+  font-size: 1vw;
+}
+
+.font_size_2vw {
+  font-size: 1.8vw;
+}
+
+.enter_number {
+  width: 10vw;
+}
+
+.checkbox {
+  width: 19vw;
+  height: 2.5vw;
+  display: grid;
+  grid-template-areas: 
+  'checkbox text'
+  'checkbox color_orange';
+  grid-template-columns: 2vw;
+  grid-template-rows: 1.2vw;
+  text-align: left;
+}
+
+.checkbox input {
+  width: 1vw;
+  height: 1vw;
+  grid-area: checkbox;
+}
+
+.checkbox_text {
+  height: 0.8vw;
+  grid-area: text;
+  font-size: 0.8vw;
+}
+
+.color_orange {
+  grid-area: color_orange;
+  color: #F38120;
+  height: 0.8vw;
+}

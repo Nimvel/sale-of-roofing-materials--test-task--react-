@@ -1,0 +1,14 @@
+.properties {
+  grid-area: properties;
+
+  width: 9vw;
+  padding: 3.5vw 2vw 0 2vw;
+  line-height: 1.2vw;
+
+  display: grid;
+  grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  background-color: white;
+  border-radius: 2vw;
+}
