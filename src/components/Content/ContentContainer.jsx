@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { onEscClickActionCreator, onMenuClickActionCreator } from '../../redux/content-reducer';
+import { onEscClickActionCreator, onMenuClickActionCreator, onPropertyAddClickActionCreator } from '../../redux/content-reducer';
 import Content from './Content';
 
 let mapStateToProps = (state) => {
@@ -7,14 +7,17 @@ let mapStateToProps = (state) => {
         menu_icon: state.contentPage.menu_icon,
         esc_icon: state.contentPage.esc_icon,
         styleContent: state.contentPage.styleContent,
-        isClicked: state.contentPage.isClicked
+        isClicked: state.contentPage.isClicked,
+        onePropertyStyle: state.contentPage.onePropertyStyle,
+        propertyStyle: state.contentPage.propertyStyle
     }
 }
 
 let mapDispatchToProps = (dispatch) => {
     return {
         onMenuClick: () => dispatch(onMenuClickActionCreator()),
-        onEscClick: () => dispatch(onEscClickActionCreator())
+        onEscClick: () => dispatch(onEscClickActionCreator()),
+        onAddClick: () => dispatch(onPropertyAddClickActionCreator())
     }
 }
 

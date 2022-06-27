@@ -4,7 +4,7 @@
   
     width: 82vw;
     padding: 1.5vw 1vw 1vw 1vw;
-  
+
     display: flex;
     gap: 8.5vw;
     text-transform: uppercase;
@@ -15,6 +15,10 @@
   .house {
     width: 1.2vw;
     height: 1.5vw;
+  }
+
+  .element {
+    cursor: pointer;
   }
 
   .element:hover {

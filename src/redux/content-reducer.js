@@ -2,11 +2,17 @@ let initialState = {
     menu_icon: 'menu_icon',
     esc_icon: 'hidden',
     styleContent: 'content',
-    isClicked: false
+    isClicked: false,
+
+    onePropertyStyle: 'one_property',
+    propertyStyle: 'hidden',
+
+    propertyClicked: false,
 }
 
 let ON_MENU_CLICK = 'ON_MENU_CLICK';
 let ON_ESC_CLICK = 'ON_ESC_CLICK';
+let ON_PROPERTY_ADD_CLICK = 'ON_PROPERTY_ADD_CLICK';
 
 const concontentReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -28,6 +34,14 @@ const concontentReducer = (state = initialState, action) => {
                 isClicked: false
             }
 
+        case ON_PROPERTY_ADD_CLICK:
+            return {
+                ...state,
+                onePropertyStyle: 'hidden',
+                propertyStyle: 'properties',
+                propertyClicked: true
+            }
+
         default:
             return state;
     }
@@ -35,5 +49,6 @@ const concontentReducer = (state = initialState, action) => {
 
 export const onMenuClickActionCreator = () => ({ type: ON_MENU_CLICK })
 export const onEscClickActionCreator = () => ({ type: ON_ESC_CLICK })
+export const onPropertyAddClickActionCreator = () => ({ type: ON_PROPERTY_ADD_CLICK })
 
 export default concontentReducer;

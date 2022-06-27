@@ -2,8 +2,8 @@
   width: 27vw;
   height: 34vw;
 
-  position: absolute;
-  right: 0;
+  /* position: relative; */
+  /* right: 0; */
   /* padding: 2vw; */
 
   grid-area: submit_application;
@@ -87,19 +87,31 @@
   text-align: left;
 }
 
+.checkbox_on {
+  background-image: url(../../assets/checkbox_on.svg);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.checkbox_off {
+  background-image: url(../../assets/checkbox_off.svg);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
 /* .checkbox input {
   width: 1vw;
   height: 1vw;
   grid-area: checkbox;
 } */
 
-.checkbox img {
+/* .checkbox img {
   width: 1.1vw;
   height: 1.1vw;
   grid-area: checkbox;
-  /* position: absolute;
-  transform: translate(0.3vw, 0.2vw); */
-}
+  position: absolute;
+  transform: translate(0.3vw, 0.2vw);
+} */
 
 .checkbox_text {
   width: 16vw;

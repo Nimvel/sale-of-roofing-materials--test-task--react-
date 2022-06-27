@@ -1,10 +1,13 @@
-import style from './Submit_application.module.css';
+import style from './SubmitApplication.module.css';
 import close from '../../assets/close.svg';
 import { NavLink } from 'react-router-dom';
-import checkbox from '../../assets/checkbox.svg'
-import empty from '../../assets/empty.svg'
+// import checkbox from '../../assets/checkbox.svg'
+// import empty from '../../assets/empty.svg'
 
-const Submit_application = () => {
+const SubmitApplication = ({ checkboxStyle, checkbox_click}) => {
+    let onCheckboxClick = () => {
+        checkbox_click();
+    }
     return (
         <div className={style.submit_application_background}>
             <NavLink to='/*' className={style.close}>
@@ -20,8 +23,9 @@ const Submit_application = () => {
                     <span className={style.call_me_button_text}>Позвоните мне</span>
                 </div>
                 <div className={style.checkbox}>
-                    <img src={checkbox} />
-                    <img src={empty} />
+                    <div className={style[checkboxStyle]} onClick={onCheckboxClick} ></div>
+                    {/* <img src={checkbox} />
+                    <img src={empty} /> */}
                     <span className={style.checkbox_text}>Нажимая кнопку вы соглашаетесь с условиями</span>
                     <span className={style.color_orange}>Политики конфиденциальности</span>
                 </div>
@@ -30,4 +34,4 @@ const Submit_application = () => {
     )
 }
 
-export default Submit_application;
+export default SubmitApplication;

@@ -1,14 +1,22 @@
+.all_content {
+  width: 100%;
+  position: relative;
+  top: 2vw;
+
+  display: grid;
+  grid-template-areas: 'content submit_application';
+  grid-template-columns: 60vw;
+}
+
 .content {
-    position: relative;
-    top: 2vw;
-  
+    grid-area: content;
     display: grid;
     grid-template-areas: 
-    'properties sale_roof submit_application'
-    'properties and_installation submit_application'
-    'properties buttons submit_application'
-    'properties answer submit_application';
-    grid-template-columns: 15vw 45vw 25vw;
+    'properties sale_roof'
+    'properties and_installation'
+    'properties buttons'
+    'properties answer ';
+    grid-template-columns: 15vw 45vw;
     grid-template-rows: 14.5vw 4vw 6.5vw;
     gap: 1vw;
   }
@@ -35,6 +43,7 @@
   
     grid-area: sale_roof;
     font-size: 3vw;
+    z-index: 4;
   }
   
   .and_installation {
@@ -121,7 +130,14 @@
   
   @media (max-width: 768px) {
     .menu {
+      width: 300px;
+      /* padding: 0 100px 0 100px; */
+      position: absolute;
+      top: 0;
+      left: 0;
+
       background-color: #F5F5F5;
+      border-radius: 30px;
     }
 
     .menu_icon {
@@ -129,8 +145,8 @@
       height: 20px;
 
       position: absolute;
-      top: 30px;
-      right: 20px;
+      top: -85px;
+      right: 15px;
 
       background-image: url(../../assets/menu.svg);
       background-size: 100% 100%;
@@ -142,8 +158,9 @@
       height: 20px;
 
       position: absolute;
-      top: 30px;
-      right: 20px;
+      top: -85px;
+      right: 15px;
+
       background-image: url(../../assets/esc.svg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -153,23 +170,40 @@
       display: none;
     }
 
-    .content {
+    .all_content {
       width: 276px;
       height: 580px;
       position: relative;
       top: 10px;
       left: 50%;
       transform: translate(-50%);
-    
       grid-area: other;
+
+    
+      display: grid;
+      grid-template-columns: 60vw;
+
+    }
+
+    .content {
+      width: 276px;
+      height: 100%;
+      /*position: relative;
+      top: 10px;
+      left: 50%;
+      transform: translate(-50%);
+    
+      grid-area: other; */
       grid-template-areas: 
       'sale_roof'
       'and_installation'
       'answer'
       'buttons'
+      'one_property'
       'properties';
       grid-template-rows: 85px 20px 60px 180px;
       gap: 10px;
+      background-color: brown;
     }
 
     .sale_roof {
@@ -250,37 +284,136 @@
     }
   
     .properties {
-      width: 150px;
-      padding: 10px 30px 10px 10px;
+      width: 260px;
+      height: 550px;
+      /* padding: 10px 30px 10px 10px; */
 
       position: relative;
-      
-      margin: auto;
-      left: 43px;
+      left: 0;
+      transform: translate(0, -75%);
+      /* bottom: 20px; */
 
+      /* margin-left: 50px; */
+      /* margin-right: 50px; */
+      /* left: 50%; */
+      /* transform: translate(30%); */
+
+      grid-area: properties;
+      grid-template-areas: 
+      'first_property remove'
+      'second_property remove'
+      'third_property remove'
+      'fourth_property remove'
+      'fifth_property remove';
+      grid-template-columns: 150px 100px;
       line-height: 15px;
       font-size: 10px;
+      text-align: left;
+
+      background: none;
+      background-color: white;
+      z-index: 1;
+
+      /* grid-template-areas: 
+      'one_property'; */
+    }
+
     
-      grid-template-rows: 150px;
+
+    .properties_top {
+      
+    }
+
+
+    .one_property {
+      grid-area: one_property;
+      width: 200px;
+      height: 250px;
+
+      position: relative;
+      bottom: 0;
+      left: 35px;
+
+      display: grid;
+      grid-template-areas: 
+      'one_property_text button'
+      'small_text small_text';
+      
+      text-align: left;
+      clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+      background-color: white;
       border-radius: 20px;
     }
 
-    .button {
-      width: 33px;
-      height: 33px;
-      position: absolute;
-      top: 30px;
-      right: 20px;
-      background-image: url(../../assets/button.svg);
+    .one_property_text {
+      width: 110px;
+      height: 0px;
+
+      position: relative;
+      top: 25px;
+      left: 30px;
+
+      grid-area: one_property_text;
+      font-size: 12px;
+      line-height: 17px;
+      background-color: burlywood;
     }
 
-    .first_property {
-      width: 95px;
+    .small_text {
+      width: 130px;
+      height: 10px;
+
       position: relative;
-      top: 10px;
-      left: 10px;
-      text-align: left;
+      top: -55px;
+      left: 30px;
+
+      grid-area: small_text;
+      font-size: 7px;
+      color: #c5c5c5;
+      line-height: 9px;
     }
+
+    .add {
+      width: 33px;
+      height: 33px;
+
+      position: relative;
+      top: 30px;
+      left: 15px;
+
+      grid-area: button;
+      background-image: url(../../assets/add.svg);
+    }
+
+    .remove {
+      width: 33px;
+      height: 33px;
+
+      position: relative;
+      top: 30px;
+      left: 15px;
+
+      grid-area: button;
+      background-image: url(../../assets/remove.svg);
+    }
+
+    /* .first_property {
+      grid-area: first_property;
+      display: none;
+    }
+
+    .second_property {
+      display: none;
+    }
+    .third_property {
+      display: none;
+    }
+    .fourth_property {
+      display: none;
+    }
+    .fifth_property {
+      display: none;
+    } */
 
     .header_menu {
       width: 150px;
@@ -399,5 +532,29 @@
     .content_menu {
       display: none;
     }
+
+    .one_property {
+      display: none;
+    }
+
+    .one_property_text {
+      display: none;
+    }
+
+    .small_text {
+      display: none;
+    }
+
+    .add {
+      display: none;
+    }
+
+    .remove {
+      display: none;
+    }
+
+    /* .menu {
+      display: none;
+    } */
 }
   
