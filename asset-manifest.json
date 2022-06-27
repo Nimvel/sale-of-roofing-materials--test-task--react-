@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sale-of-roofing-materials--test-task--react-/static/css/main.b02b9c5b.css",
-    "main.js": "/sale-of-roofing-materials--test-task--react-/static/js/main.e3d0c1b7.js",
+    "main.css": "/sale-of-roofing-materials--test-task--react-/static/css/main.c6bb187f.css",
+    "main.js": "/sale-of-roofing-materials--test-task--react-/static/js/main.a18fcca5.js",
     "static/js/787.b606165e.chunk.js": "/sale-of-roofing-materials--test-task--react-/static/js/787.b606165e.chunk.js",
     "static/media/background.png": "/sale-of-roofing-materials--test-task--react-/static/media/background.71cd9e0bc5ccf6052e7e.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/sale-of-roofing-materials--test-task--react-/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
@@ -29,12 +29,12 @@
     "static/media/esc.svg": "/sale-of-roofing-materials--test-task--react-/static/media/esc.17eda399add4f99bf163.svg",
     "static/media/checkbox_off.svg": "/sale-of-roofing-materials--test-task--react-/static/media/checkbox_off.09ea4397dc730842d48a.svg",
     "static/media/circle.svg": "/sale-of-roofing-materials--test-task--react-/static/media/circle.fec424e1780233fab070b2d312cb84ca.svg",
-    "main.b02b9c5b.css.map": "/sale-of-roofing-materials--test-task--react-/static/css/main.b02b9c5b.css.map",
-    "main.e3d0c1b7.js.map": "/sale-of-roofing-materials--test-task--react-/static/js/main.e3d0c1b7.js.map",
+    "main.c6bb187f.css.map": "/sale-of-roofing-materials--test-task--react-/static/css/main.c6bb187f.css.map",
+    "main.a18fcca5.js.map": "/sale-of-roofing-materials--test-task--react-/static/js/main.a18fcca5.js.map",
     "787.b606165e.chunk.js.map": "/sale-of-roofing-materials--test-task--react-/static/js/787.b606165e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b02b9c5b.css",
-    "static/js/main.e3d0c1b7.js"
+    "static/css/main.c6bb187f.css",
+    "static/js/main.a18fcca5.js"
   ]
 }
