@@ -43,7 +43,7 @@
   
     grid-area: sale_roof;
     font-size: 3vw;
-    z-index: 4;
+    /* z-index: 1; */
   }
   
   .and_installation {
@@ -131,7 +131,6 @@
   @media (max-width: 768px) {
     .menu {
       width: 300px;
-      /* padding: 0 100px 0 100px; */
       position: absolute;
       top: 0;
       left: 0;
@@ -182,18 +181,11 @@
     
       display: grid;
       grid-template-columns: 60vw;
-
     }
 
     .content {
       width: 276px;
       height: 100%;
-      /*position: relative;
-      top: 10px;
-      left: 50%;
-      transform: translate(-50%);
-    
-      grid-area: other; */
       grid-template-areas: 
       'sale_roof'
       'and_installation'
@@ -203,7 +195,6 @@
       'properties';
       grid-template-rows: 85px 20px 60px 180px;
       gap: 10px;
-      background-color: brown;
     }
 
     .sale_roof {
@@ -284,19 +275,12 @@
     }
   
     .properties {
-      width: 260px;
+      /* width: 260px;
       height: 550px;
-      /* padding: 10px 30px 10px 10px; */
 
       position: relative;
       left: 0;
       transform: translate(0, -75%);
-      /* bottom: 20px; */
-
-      /* margin-left: 50px; */
-      /* margin-right: 50px; */
-      /* left: 50%; */
-      /* transform: translate(30%); */
 
       grid-area: properties;
       grid-template-areas: 
@@ -306,22 +290,14 @@
       'fourth_property remove'
       'fifth_property remove';
       grid-template-columns: 150px 100px;
+      grid-template-rows: 150px 150px 150px 150px;
       line-height: 15px;
       font-size: 10px;
       text-align: left;
 
       background: none;
       background-color: white;
-      z-index: 1;
-
-      /* grid-template-areas: 
-      'one_property'; */
-    }
-
-    
-
-    .properties_top {
-      
+      z-index: 0; */
     }
 
 
@@ -396,24 +372,6 @@
       grid-area: button;
       background-image: url(../../assets/remove.svg);
     }
-
-    /* .first_property {
-      grid-area: first_property;
-      display: none;
-    }
-
-    .second_property {
-      display: none;
-    }
-    .third_property {
-      display: none;
-    }
-    .fourth_property {
-      display: none;
-    }
-    .fifth_property {
-      display: none;
-    } */
 
     .header_menu {
       width: 150px;
@@ -521,6 +479,14 @@
 }
 
   @media (min-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    .menu_icon {
+      display: none;
+    }
+
     .mini_answer {
       display: none;
     }
@@ -553,8 +519,6 @@
       display: none;
     }
 
-    /* .menu {
-      display: none;
-    } */
+    
 }
   

@@ -25,13 +25,13 @@
 
 .submit_application {
   width: 17vw;
-  height: 27vw;
+  height: 30vw;
   position: relative;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
-  grid-template-rows: 6vw 4vw 2vw 2vw 5vw 5vw 8vw;
+  grid-template-rows: 6vw 4vw 2vw 2vw 5vw 5vw;
 }
 
 .bold_text {
@@ -53,6 +53,12 @@
   height: 4vw;
   border-radius: 3vw;
   border: none;
+  text-align: center;
+  color: #c5c5c5;
+}
+
+.submit_application input::placeholder {
+  color: #c5c5c5;
 }
 
 .call_me_button {
