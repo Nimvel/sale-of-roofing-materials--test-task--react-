@@ -11,7 +11,6 @@ import { NavLink } from 'react-router-dom';
 const Contacts = () => {
     return (
         <div className={style.contacts}>
-
             <div className={style.roof}>
                 <p><strong>Кровельные и фасадные материалы</strong> в Тюмени и области.</p>
                 <p>Профессиональный монтаж с 2010 года.</p>
@@ -29,7 +28,7 @@ const Contacts = () => {
             </div>
 
             <div className={style.answer_online}>
-                <li> Отвечаем онлайн</li>
+                <li> Отвечаем <strong>онлайн</strong></li>
                 <img className={style.messengers} src={viber} alt="viber" />
                 <img className={style.messengers} src={whatsapp} alt="whatsapp" />
                 <img className={style.messengers} src={telegram} alt="telegram" />
@@ -45,11 +44,6 @@ const Contacts = () => {
                     <div className={style.call_me}>Позвоните мне</div>
                 </div>
             </NavLink>
-{/* 
-            <NavLink to='/menu' className={style.menu_icon}>
-                <img src={menu} alt="menu" />
-            </NavLink> */}
-
         </div>
     )
 }

@@ -82,8 +82,8 @@
   
   .messengers {
     width: 2.5vw;
-    height: 2.5svw;
-    padding: 0.2vw;
+    height: 2.5vw;
+    padding: 0.5vw 0.2vw;
   }
   
   .schedule {
@@ -97,6 +97,7 @@
   .telephone_number {
     font-size: 1.8vw;
     font-weight: bold;
+    /* user-select: all; */
   }
   
   .call_me {
