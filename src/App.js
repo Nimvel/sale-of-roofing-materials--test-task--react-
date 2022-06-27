@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header/Header';
+import { HeaderContainer } from './components/Header/HeaderContainer';
 import Contacts from './components/Contacts/Contacts';
 import { ContentContainer } from './components/Content/ContentContainer';
 
@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="app">
             <div className="menu">
-                <Header />
+                <HeaderContainer />
                 <Contacts />
                 <ContentContainer />
             </div>

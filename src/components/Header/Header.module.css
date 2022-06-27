@@ -6,7 +6,7 @@
     padding: 1.5vw 1vw 1vw 1vw;
   
     display: flex;
-    gap: 5.5vw;
+    gap: 8.5vw;
     text-transform: uppercase;
   
     border-bottom: rgba(28, 28, 28, 7%) 0.1vw solid;
@@ -15,6 +15,10 @@
   .house {
     width: 1.2vw;
     height: 1.5vw;
+  }
+
+  .element:hover {
+    border-bottom: #F38120 0.1vw solid;
   }
 
 @media (max-width: 768px) {
