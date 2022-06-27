@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/sale-of-roofing-materials--test-task--react-/static/css/main.08e74873.css",
+    "main.js": "/sale-of-roofing-materials--test-task--react-/static/js/main.6c80be20.js",
+    "static/js/787.b606165e.chunk.js": "/sale-of-roofing-materials--test-task--react-/static/js/787.b606165e.chunk.js",
+    "static/media/background.png": "/sale-of-roofing-materials--test-task--react-/static/media/background.71cd9e0bc5ccf6052e7e.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/sale-of-roofing-materials--test-task--react-/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
+    "static/media/logo.png": "/sale-of-roofing-materials--test-task--react-/static/media/logo.88ec64b7370d9a4fe9b8.png",
+    "static/media/whatsapp.svg": "/sale-of-roofing-materials--test-task--react-/static/media/whatsapp.e3c15380176dfd6b5b0b4a7bd8caa18c.svg",
+    "static/media/cursor.svg": "/sale-of-roofing-materials--test-task--react-/static/media/cursor.c579c2010c70b8eeb6542a10c241be37.svg",
+    "static/media/remove.svg": "/sale-of-roofing-materials--test-task--react-/static/media/remove.4f6635e3a8306b8b5880.svg",
+    "static/media/green_button.svg": "/sale-of-roofing-materials--test-task--react-/static/media/green_button.3c7ea2f7e7ce2f3a9f87.svg",
+    "static/media/orange_button.svg": "/sale-of-roofing-materials--test-task--react-/static/media/orange_button.a599e38f1ddcb5c3c224.svg",
+    "static/media/orange_button_hover.svg": "/sale-of-roofing-materials--test-task--react-/static/media/orange_button_hover.fb5c3e482b565bb39772.svg",
+    "static/media/mini_green_button.svg": "/sale-of-roofing-materials--test-task--react-/static/media/mini_green_button.6369df4c1346056f78ce.svg",
+    "static/media/mini_orange_button.svg": "/sale-of-roofing-materials--test-task--react-/static/media/mini_orange_button.2d68eaf415f56f55830f.svg",
+    "static/media/logo_background.svg": "/sale-of-roofing-materials--test-task--react-/static/media/logo_background.3669d9fa1a469d095b45.svg",
+    "static/media/call_me_button.svg": "/sale-of-roofing-materials--test-task--react-/static/media/call_me_button.62bbff7e9e4a348901c5.svg",
+    "static/media/circles.svg": "/sale-of-roofing-materials--test-task--react-/static/media/circles.5570e260f6e8ed572746fe6e41df30bb.svg",
+    "static/media/add.svg": "/sale-of-roofing-materials--test-task--react-/static/media/add.341891933570c82826f3.svg",
+    "static/media/viber.svg": "/sale-of-roofing-materials--test-task--react-/static/media/viber.9f35b93f37e2bbebbc5f981e85316791.svg",
+    "static/media/checkbox_on.svg": "/sale-of-roofing-materials--test-task--react-/static/media/checkbox_on.f64c8620d843605bf3d6.svg",
+    "static/media/telegram.svg": "/sale-of-roofing-materials--test-task--react-/static/media/telegram.524227f817d0c8d53ff4feb8c7e4a5a4.svg",
+    "index.html": "/sale-of-roofing-materials--test-task--react-/index.html",
+    "static/media/close.svg": "/sale-of-roofing-materials--test-task--react-/static/media/close.bff655e1060527d96056cfe2fd59ecf9.svg",
+    "static/media/menu.svg": "/sale-of-roofing-materials--test-task--react-/static/media/menu.243ad5d91f084af57d1d.svg",
+    "static/media/house.svg": "/sale-of-roofing-materials--test-task--react-/static/media/house.04fd938299c07eeb048b83103cf3c228.svg",
+    "static/media/green_button_hover.svg": "/sale-of-roofing-materials--test-task--react-/static/media/green_button_hover.569a2393e1c25b99adbc.svg",
+    "static/media/esc.svg": "/sale-of-roofing-materials--test-task--react-/static/media/esc.17eda399add4f99bf163.svg",
+    "static/media/checkbox_off.svg": "/sale-of-roofing-materials--test-task--react-/static/media/checkbox_off.09ea4397dc730842d48a.svg",
+    "static/media/circle.svg": "/sale-of-roofing-materials--test-task--react-/static/media/circle.fec424e1780233fab070b2d312cb84ca.svg",
+    "main.08e74873.css.map": "/sale-of-roofing-materials--test-task--react-/static/css/main.08e74873.css.map",
+    "main.6c80be20.js.map": "/sale-of-roofing-materials--test-task--react-/static/js/main.6c80be20.js.map",
+    "787.b606165e.chunk.js.map": "/sale-of-roofing-materials--test-task--react-/static/js/787.b606165e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08e74873.css",
+    "static/js/main.6c80be20.js"
+  ]
+}
