@@ -28,6 +28,7 @@
 a {
   text-decoration: none;
   color: black;
+  cursor: default;
 }
 
 @media (max-width: 768px) {

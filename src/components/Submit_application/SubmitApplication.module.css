@@ -17,6 +17,7 @@
   position: relative;
   top: 2vw;
   left: 11vw;
+  cursor: pointer;
 }
 
 .close img {

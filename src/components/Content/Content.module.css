@@ -150,6 +150,8 @@
       background-image: url(../../assets/menu.svg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+
+      cursor: pointer;
     }
 
     .esc_icon {
@@ -163,6 +165,8 @@
       background-image: url(../../assets/esc.svg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+
+      cursor: pointer;
     }
 
     .hidden {
@@ -358,6 +362,7 @@
       left: 15px;
 
       grid-area: button;
+      cursor: pointer;
       background-image: url(../../assets/add.svg);
     }
 
@@ -387,11 +392,16 @@
 
       grid-area: other;
       display: grid;
-      gap: 15px;
+      gap: 17px;
     }
 
-    .height {
-      height: 15px;
+    .element {
+      height: 25px;
+      cursor: pointer;
+    }
+
+    .element:hover {
+      border-bottom: #F38120 0.1vw solid;
     }
 
     .contacts_menu {
@@ -413,6 +423,7 @@
       position: relative;
       left: 50%;
       transform: translate(-50%);
+      cursor: pointer;
     }
 
     .roof {
@@ -518,7 +529,5 @@
     .remove {
       display: none;
     }
-
-    
 }
   

@@ -91,13 +91,12 @@
     position: relative;
     top: 40%;
     transform: translate(0, -50%);
-    /* text-decoration: none; */
+    cursor: pointer;
   }
   
   .telephone_number {
     font-size: 1.8vw;
     font-weight: bold;
-    /* user-select: all; */
   }
   
   .call_me {

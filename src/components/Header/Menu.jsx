@@ -5,16 +5,27 @@ import telegram from '../../assets/telegram.svg';
 import house from '../../assets/house.svg';
 
 const Menu = () => {
+    let arr = [
+        {id: 1, name: 'Kаталог'},
+        {id: 2, name: 'Преимущества'},
+        {id: 3, name: 'Примеры работ'},
+        {id: 4, name: 'Mонтаж'},
+        {id: 5, name: 'Отзывы'},
+        {id: 6, name: 'Ответы на вопросы'}
+    ]
+
+    let elements = arr.map (e => <div key={e.id} className={style.element}>{e.name}</div>)
     return (
         <div className={style.menu}>
             <div className={style.header_menu}>
                 <img className={style.house} src={house} alt="house" />
-                <div className={style.height}>Kаталог</div>
+                {elements}
+                {/* <div className={style.height}>Kаталог</div>
                 <div className={style.height}>Преимущества</div>
                 <div className={style.height}>Примеры работ</div>
                 <div className={style.height}>Mонтаж</div>
                 <div className={style.height}>Отзывы</div>
-                <div className={style.height}>Ответы на вопросы</div>
+                <div className={style.height}>Ответы на вопросы</div> */}
             </div>
 
 
