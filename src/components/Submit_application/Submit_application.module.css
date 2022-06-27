@@ -1,6 +1,6 @@
 .submit_application_background {
   width: 27vw;
-  height: 32vw;
+  height: 34vw;
 
   position: absolute;
   right: 0;
@@ -13,27 +13,52 @@
   border-radius: 2vw;
 }
 
-.submit_application {
-  width: 16vw;
+.close {
   position: relative;
-  top: 55%;
+  top: 2vw;
+  left: 11vw;
+}
+
+.close img {
+  width: 1vw;
+}
+
+.submit_application {
+  width: 17vw;
+  height: 27vw;
+  position: relative;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
-  grid-template-rows: 5vw 4vw 2vw 2vw 5vw 5vw 8vw;
+  grid-template-rows: 6vw 4vw 2vw 2vw 5vw 5vw 8vw;
+}
+
+.bold_text {
+  width: 17vw;
+  font-size: 1.8vw;
+}
+
+.enter_number_text {
+  width: 17vw;
+  font-size: 0.9vw;
+}
+
+.schedule {
+  width: 17vw;
 }
 
 .submit_application input {
-  width: 16vw;
+  width: 17vw;
   height: 4vw;
   border-radius: 3vw;
   border: none;
 }
 
 .call_me_button {
-  width: 16vw;
+  width: 17vw;
   height: 4vw;
-  background-image: url(../../../assets/call_me_button.svg);
+  background-image: url(../../assets/call_me_button.svg);
   background-size: 100% 100%;
 }
 
@@ -44,13 +69,6 @@
   transform: translate(0, -50%);
   color: white;
   font-size: 1vw;
-}
-.font_size_1vw {
-  font-size: 1vw;
-}
-
-.font_size_2vw {
-  font-size: 1.8vw;
 }
 
 .enter_number {
@@ -69,20 +87,35 @@
   text-align: left;
 }
 
-.checkbox input {
+/* .checkbox input {
   width: 1vw;
   height: 1vw;
   grid-area: checkbox;
+} */
+
+.checkbox img {
+  width: 1.1vw;
+  height: 1.1vw;
+  grid-area: checkbox;
+  /* position: absolute;
+  transform: translate(0.3vw, 0.2vw); */
 }
 
 .checkbox_text {
+  width: 16vw;
   height: 0.8vw;
   grid-area: text;
-  font-size: 0.8vw;
+  font-size: 0.7vw;
 }
 
 .color_orange {
   grid-area: color_orange;
   color: #F38120;
   height: 0.8vw;
+}
+
+@media (max-width: 768px) {
+  .submit_application_background {
+    display: none;
+  }
 }

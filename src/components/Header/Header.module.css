@@ -16,3 +16,9 @@
     width: 1.2vw;
     height: 1.5vw;
   }
+
+@media (max-width: 768px) {
+    .header {
+      display: none;
+    }
+}

@@ -1,7 +1,7 @@
 import './App.css';
-import Contacts from './components/Contacts/Contacts';
-import Content from './components/Content/Content';
 import Header from './components/Header/Header';
+import Contacts from './components/Contacts/Contacts';
+import { ContentContainer } from './components/Content/ContentContainer';
 
 function App() {
     return (
@@ -9,7 +9,7 @@ function App() {
             <div className="menu">
                 <Header />
                 <Contacts />
-                <Content />
+                <ContentContainer />
             </div>
         </div>
     );

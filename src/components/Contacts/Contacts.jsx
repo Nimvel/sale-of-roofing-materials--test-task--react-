@@ -4,6 +4,9 @@ import logo from '../../assets/logo.png';
 import viber from '../../assets/viber.svg';
 import whatsapp from '../../assets/whatsapp.svg';
 import telegram from '../../assets/telegram.svg';
+import circle from '../../assets/circle.svg';
+
+import { NavLink } from 'react-router-dom';
 
 const Contacts = () => {
     return (
@@ -18,25 +21,34 @@ const Contacts = () => {
                 <div className={style.round_background}>
                     <span className={style.color_green}>Pdf</span>
                 </div>
-                <span className={style.border_bottom}>Скачать прайс-каталог</span>
+                <span className={style.catalog}>Скачать прайс-каталог</span>
             </div>
 
             <div className={style.logo}>
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" />
             </div>
 
             <div className={style.answer_online}>
                 <li> Отвечаем онлайн</li>
-                <img className={style.messengers} src={viber} alt="viber"/>
-                <img className={style.messengers} src={whatsapp} alt="whatsapp"/>
-                <img className={style.messengers} src={telegram} alt="telegram"/>
+                <img className={style.messengers} src={viber} alt="viber" />
+                <img className={style.messengers} src={whatsapp} alt="whatsapp" />
+                <img className={style.messengers} src={telegram} alt="telegram" />
             </div>
 
-            <div className={style.schedule}>
-                <strong>Пн-Пт</strong> 9:00 - 18:00, <strong>Сб</strong> 10:00 - 18:00
-                <div className={style.telephone_number}>8 (800) 222-54-60</div>
-                <div className={style.call_me, style.border_bottom, style.color_green}>Позвоните мне</div>
-            </div>
+            <NavLink to='/submit_application'>
+                <div className={style.schedule}>
+                    <span>
+                        <img className={style.circle} src={circle} alt="circle" />
+                        <strong> Пн-Пт</strong> 9:00 - 18:00, <strong>Сб</strong> 10:00 - 18:00
+                    </span>
+                    <div className={style.telephone_number}>8 (800) 222-54-60</div>
+                    <div className={style.call_me}>Позвоните мне</div>
+                </div>
+            </NavLink>
+{/* 
+            <NavLink to='/menu' className={style.menu_icon}>
+                <img src={menu} alt="menu" />
+            </NavLink> */}
 
         </div>
     )

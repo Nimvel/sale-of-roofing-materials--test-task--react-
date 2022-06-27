@@ -13,8 +13,6 @@
     position: relative;
     top: 40%;
     transform: translate(0, -50%);
-  
-    /* font-size: 0.9vw; */
   }
   
   .download_catalog {
@@ -29,10 +27,14 @@
   }
   
   .catalog {
-    width: 10vw;
+    width: 9.5vw;
+    height: 1.5vw;
+
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translate(0, -50%);
+
+    border-bottom: 0.1vw dotted #12C868;
   }
   
   .round_background {
@@ -49,22 +51,14 @@
     color: #12C868;
   }
   
-  .border_bottom {
-    height: 1.5vw;
-    border-bottom: 0.1vw dotted #12C868;
-  }
-  
   .logo {
-    /* width: 20vw;
-    height: 15vh; */
     background-image: url(../../assets/logo_background.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* clip-path: polygon(5% 75%, 0 70%, 0 0, 100% 0, 100% 70%, 95% 75%, 65% 75%, 55% 65%, 45% 65%, 35% 75%); */
   }
   
   .logo img {
-    padding-top: 1vw;
+    padding: 1.5vw;
     width: 10vw;
   }
   
@@ -97,6 +91,7 @@
     position: relative;
     top: 40%;
     transform: translate(0, -50%);
+    /* text-decoration: none; */
   }
   
   .telephone_number {
@@ -105,10 +100,87 @@
   }
   
   .call_me {
+    width: 6vw;
+
     position: relative;
-    top: 0;
+    top: 0.5vw;
     left: 50%;
     transform: translate(-50%);
-    width: 6vw;
+
+    text-align: center;
+    color: #12C868;
+    border-bottom: 0.1vw dotted #12C868;
   }
+
+  @media (max-width: 768px) {
+    .contacts {
+      width: 320px;
+      height: 95px;
+      grid-area: contacts;
+      position: relative;
+      top: 0;
+      display: flex;
+      gap: 30px;
+    }
+    
+    .roof {
+      display: none;
+    }
+    
+    .download_catalog {
+      display: none;
+
+    }
+    
+    .logo {
+      width: 80px;
+    }
+
+    .logo img {
+      padding: 20px;
+      width: 51.46px;
+      height: 21.35px;
+    }
+    
+    .answer_online {
+      display: none;
+    }
+    
+    .schedule {
+      width: 150px;
+      height: 50px;
+      position: relative;
+      top: 40%;
+      transform: translate(0, -50%);
+    }
+    
+    .telephone_number {
+      font-size: 14px;
+    }
+    
+    .call_me {
+      width: 73px;
+
+      font-size: 10px;
+    }
+
+    /* .menu_icon {
+      width: 20px;
+      height: 20px;
+
+      position: relative;
+      top: 30px;
+      right: 10px;
+    } */
+}
+
+  @media (min-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    .circle {
+      display: none;
+    }
+}
   

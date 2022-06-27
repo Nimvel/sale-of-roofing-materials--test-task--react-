@@ -1,10 +1,13 @@
-// import style from './Properties.module.css'
-import style from '../Content.module.css'
+import style from '../Content.module.css';
+import button from '../../../assets/button.svg';
 
 const Properties = () => {
     return (
             <div className={style.properties}>
-                <div><strong>Гарантия от 50 лет</strong> на материалы и 5 лет на монтаж</div>
+                <div className={style.button}>
+
+                </div>
+                <div className={style.first_property} ><strong>Гарантия от 50 лет</strong> на материалы и 5 лет на монтаж</div>
                 <div><strong>Замер, монтажный проект</strong> и<br/>еще 4 услуги бесплатно</div>
                 <div><strong>Сметы<br/>точны</strong> до копейки </div>
                 <div><strong>Поэтапная оплата,</strong> кредит или рассрочка </div>
